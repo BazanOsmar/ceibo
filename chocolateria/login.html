@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesión</title>
+  
+<link rel="stylesheet" href="csslogin.css">
+
+</head>
+<!-- este form contiene todos los textos y adentro estan todas las features de la pagina. -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+<br><br><br> <img src="images/loginimg.png" height="115" width="155" id="logo"> 
+		<h1>   Bienvenidos a El Ceibo</h1><br><br><br>
+		
+		<p >En El Ceibo Chocolatería, nos complace recibirte y ofrecerte <br> una experiencia única y deliciosa.Sumérgete en el maravilloso<br> mundo del chocolate y déjate cautivar por nuestros productos artesanales<br> y de alta calidad.</p>
+		
+		</div>
+	</div>
+	
+	
+		<div class="right"><br> <br><br> <br>
+		<h5>Iniciar Sesión</h5>
+		
+		<div class="inputs">
+			<input id="usuario" type="user" placeholder="Nombre de usuario">
+			<br> <br>
+			<input id="password" type="password" placeholder="Contraseña">
+		</div>
+		<br><br><br>
+			<button onclick="login()">Entrar</button>
+	</div>
+	
+</div>
+<script>
+  // se crea un diccionario para guardar nombres y passwords
+  var usuarios = {
+    "Yaffar": "123",
+    "Sergio": "123",
+    "Osmar": "456",
+    "universidad": "universidad",
+    "llaves": "999",
+
+  };
+
+  // funcion de intentos de logeo
+  function login() {
+    var nomus = document.getElementById("usuario").value;
+    var password = document.getElementById("password").value;
+    if (usuarios.hasOwnProperty(nomus)) {
+      if (usuarios[nomus] === password) {
+        // logeo exitoso
+        alert("usuario y contraseña correctos");
+         // aqui se pone la pagina 2 de la formula
+       window.location.href="menu.html";
+      } else {
+        alert("password incorrecto");
+      }
+    } else {
+      alert("usuario no encontrado");
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+  
+</body>
+</html>

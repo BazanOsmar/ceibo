@@ -1,0 +1,58 @@
+body {
+
+  font-family: 'Oxygen', sans-serif;}
+#b {
+    background-color: #fdd808;
+}
+#head1 {
+    
+      background-size: cover;
+  background-repeat: no-repeat;
+    background-image: linear-gradient(135deg, #FAC213 10%, #5D2500 100%);
+}
+#par {
+ font-size: 25px;
+   color: #FFEAD2;
+   text-align: center;
+   }
+#text {
+    font-size: 40px;
+  }
+#carouselExample {
+  max-width: 7000px;
+  margin: 0 auto;
+}
+
+#carouselExample .carousel-item img {
+  max-height: 550px;
+  width: auto;
+  margin: 0 auto;
+}
+
+/*navbar configuraciones /*/
+  .navbar-text {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+
+  .form-inline {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-inline .form-control {
+    margin-right: 5px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+#ff {
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.
